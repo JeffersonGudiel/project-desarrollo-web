@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 10px auto;
+    perspective: 1000px;
+}
+
+.carrusel {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    animation: girar 50s infinite forwards linear;
+}
+
+.carrusel__item {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    border: 2px solid white;
+    display: flex;
+}
+
+span {
+    margin: auto;
+    font-size: 1rem;
+    background-color: black;
+    padding: 5px;
+}
+
+.carrusel__item:nth-child(1) {
+    background-image: url("../img/img1.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(2) {
+    background-image: url("../img/img2.jpg");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(3) {
+    background-image: url("../img/img3.jpg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(4) {
+    background-image: url("../img/img4.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(5) {
+    background-image: url("../img/img5.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+
+}
+
+.carrusel__item:nth-child(6) {
+    background-image: url("../img/img6.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(7) {
+    background-image: url("../img/img7.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(8) {
+    background-image: url("../img/img8.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carrusel__item:nth-child(9) {
+    background-image: url("../img/img9.jpg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes girar {
+
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-80deg);
+    }
+}
+
+
+section {
+    display: flex;
+    width: 100%;
+    height: 440px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+body {
+    background-image: url("../img/img10.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    min-height: 20px;
+    background-color: #000000a3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font: condensed 120% sans-serif;
+}
+
+.titulo {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+.tienda_introduccion {
+    color: rgb(173 169 27);
+    margin: 5%;
+    background-image: url("../img/img27.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.steelseries {
+    color: rgb(213, 195, 195);
+    margin: 5%;
+    background-image: url("../img/img21.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.logitech {
+    color: rgb(251 160 116);
+    margin: 5%;
+    background-image: url("../img/img16.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.hyperex {
+    color: rgb(255 255 255);
+    margin: 5%;
+    background-image: url("../img/img17.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.corsair {
+    color: rgb(255, 255, 255);
+    margin: 5%;
+    background-image: url("../img/img24.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.Elgato {
+    color: rgb(186 211 85);
+    margin: 5%;
+    background-image: url("../img/img25.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+}
+
+.parrafo{
+    width: 80%;
+    font: condensed 120% sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.introDatos {
+    font: condensed 120% sans-serif;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    font: condensed 120% sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    padding: 50px;
+    text-align: center;
+    font: condensed 120% sans-serif;
+}
+
+.imgtienda {
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.datos {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(198, 25, 184);
+    margin: 30% 6% 6%;
+    background-color: black;
+    opacity: .8;
+    border: 2px black solid;
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: solid 1px greenyellow;
+}
+
+td {
+    padding: 15px 50px;
+    border-bottom: solid 1px greenyellow;
+}
+
+tr {
+    padding: 100px;
+    cursor: pointer;
+    border-bottom: solid 1px greenyellow;
+}
+
+tr:hover {
+    background: #836b71;
+}
+
+.item-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% 6% 6%;
+    background-color: rgba(0, 0, 0, 0.861);
+    border: 2px black solid;
+}
+
+.parrafo1 {
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+iframe{
+    padding: 10px;
+}
+
+.listOrdenada{
+    padding: 50px;
+    color: white;
+    margin: 5% 6% 6%;
+    background-color: rgba(0, 0, 0, 0.861);
+    border: 2px black solid;
+    font-size: larger;
+}
+
+ol{
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.parrafonoti{
+    padding: 20px;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.imgnoti{
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.formulario{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 5% 12% 5%;
+    background-color: black;
+    opacity: .8;
+    border: 2px black solid;
+}
+
