@@ -237,7 +237,7 @@ nav a:hover {
     border: 2px black solid;
 }
 
-.parrafo{
+.parrafo {
     width: 80%;
     font: condensed 120% sans-serif;
     margin: 20px;
@@ -299,7 +299,7 @@ tr:hover {
     background: #836b71;
 }
 
-.item-3{
+.item-3 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -313,11 +313,11 @@ tr:hover {
     padding: 10px 10px 10px 10px;
 }
 
-iframe{
+iframe {
     padding: 10px;
 }
 
-.listOrdenada{
+.listOrdenada {
     padding: 50px;
     color: white;
     margin: 5% 6% 6%;
@@ -326,24 +326,24 @@ iframe{
     font-size: larger;
 }
 
-ol{
+ol {
     padding: 20px 20px;
     margin: 0;
 }
 
-.parrafonoti{
+.parrafonoti {
     padding: 20px;
     color: white;
     padding: 10px 10px 10px 10px;
 }
 
-.imgnoti{
+.imgnoti {
     padding: 20px;
     width: 400px;
     height: 300px;
 }
 
-.formulario{
+.formulario {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -354,3 +354,73 @@ ol{
     border: 2px black solid;
 }
 
+@media screen and (max-width: 1200px) {
+
+    /* Estilos para pantallas más pequeñas (tabletas y móviles) */
+    header {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    div .imgtienda img {
+        width: 500px;
+    }
+
+    .tienda_introduccion {
+        background-image: url("");
+        background-color: black;
+    }
+
+    .steelseries {
+        background-image: url("");
+        background-color: black;
+    }
+
+    .logitech {
+        background-image: url("");
+        background-color: black;
+    }
+
+    .hyperex {
+        background-image: url("");
+        background-color: black;
+    }
+
+    .corsair {
+        background-image: url("");
+        background-color: black;
+    }
+
+    .Elgato {
+        background-image: url("");
+        background-color: black;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Estilos para pantallas más pequeñas (tabletas y móviles) */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imgtienda {
+        display: none;
+    }
+    .imgnoti{
+        display: none;
+    }
+    .parrafonoti{
+        max-width: 600px;
+    }
+    iframe{
+        display: none;
+    }
+}
