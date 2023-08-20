@@ -1,0 +1,46 @@
+/*Header*/
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+/*termina form*/
+.listOrdenada h2 {
+  color: rgb(255, 190, 10);
+}
+
+li {
+  color: rgb(255, 190, 10);
+}
+
+dd {
+  color: rgb(23, 235, 175);
+} /*trermina lista ordenada*/
+@media screen and (max-width: 1200px) {
+  .formulario {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .carrusel {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  table {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+  }
+  .datos {
+    margin: 100%;
+  }
+} /*termina vista movil con sass*/
+
+/*# sourceMappingURL=estilo.css.map */

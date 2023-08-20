@@ -414,13 +414,16 @@ ol {
     .imgtienda {
         display: none;
     }
-    .imgnoti{
+
+    .imgnoti {
         display: none;
     }
-    .parrafonoti{
+
+    .parrafonoti {
         max-width: 600px;
     }
-    iframe{
+
+    iframe {
         display: none;
     }
 }

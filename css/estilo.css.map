@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_header.scss","../scss/_fuente.scss","../scss/_medias.scss"],"names":[],"mappings":"AAAA;AAQI;EACI;EACA;EACA;;;AAGN;AACF;EACI,OChBoB;;;ADkBxB;EACI,OCnBoB;;;ADqBxB;EACI,OCrBsB;EDsBzB;AEvBD;EACA;IACI;;;AAIJ;EACI;IACI;;;AAKR;EACI;IACI;;;AAIR;EACI;IACI;IACA;IACA;;EAEJ;IACI;;EAEP","file":"estilo.css"}
