@@ -1,7 +1,8 @@
 /*Header*/
 
 @import "fuente";
-@mixin anclas{
+
+@mixin anclas {
     font-size: 30px;
 }
 
@@ -12,17 +13,19 @@ form {
         border-radius: 4px;
 
     }
-} /*termina form*/
-.listOrdenada h2{
+}
+
+/*termina form*/
+.listOrdenada h2 {
     color: $color-fuente-primario;
 }
-li{
+
+li {
     color: $color-fuente-primario;
 }
-dd{
+
+dd {
     color: $color-fuente-secundario;
-}/*trermina lista ordenada*/
+}
 
-
-
-
+/*trermina lista ordenada*/
